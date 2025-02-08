@@ -2,6 +2,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import octagonIcon from '../img/bi_x-octagon.svg';
 
 let userSelectedDate;
 const startButton = document.querySelector('button[data-start]');
@@ -47,7 +48,7 @@ const options = {
       iziToast.show({
         message: 'Please choose a date in the future',
         position: 'topCenter',
-        iconUrl: '/img/bi_x-octagon.svg',
+        iconUrl: octagonIcon,
         iconColor: '#FFFFFF',
         backgroundColor: '#EF4040',
         messageColor: '#FFFFFF',
